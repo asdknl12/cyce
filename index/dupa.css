@@ -1,0 +1,396 @@
+/*--------------------------------------------------------------
+# account
+--------------------------------------------------------------*/
+.linklol {
+  text-decoration: none;
+  color: #fff;
+  line-height: 0.5;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.opis {
+  text-shadow: 2px 2px 10px black;
+  color: fff;
+}
+.account {
+  background: #232323;
+  padding: 50px;
+}
+.account .box {
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.5);
+  background: rgba(40, 40, 40, 1);
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.account .box:hover {
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.5);
+  background: rgba(36, 36, 36, 1);
+}
+.account h3 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.account .price {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.account .price sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+.account .price span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.account .halloween {
+  font-size: 25px;
+  color: #eb6123;
+  font-weight: 200;
+  font-family: "Impact", sans-serif;
+}
+
+.account .shoptitle {
+  font-size: 40px;
+  color: #1C91E2;
+  text-shadow: 2px 2px 2px black;
+  font-weight: 200;
+  font-family: "Impact", sans-serif;
+  padding: 10px;
+}
+
+.account ul {
+  padding: 0;
+  list-style: none;
+  color: #444444;
+  text-align: center;
+  line-height: 26px;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.account ul li {
+  padding-bottom: 10px;
+}
+.account ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+.account .btn-buy {
+  display: inline-block;
+  padding: 8px 40px 10px 40px;
+  border-radius: 10px;
+  color: #1C91E2;
+  transition: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  transition: 0.3s;
+  border: 1px solid #1C91E2;
+}
+.account .btn-buy:hover {
+  background: #1C91E2;
+  color: #fff;
+}
+.account .featured {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 20px;
+  padding: 1px 0 3px 0;
+  background: rgba(11, 57, 89, 0.999);
+  color: #fff;
+  box-shadow: 0px 5px 30px rgba(11, 57, 89, 0.8);
+}
+
+.account .donat {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+  background: #FF0833;
+  color: #fff;
+}
+
+.account .redbuy {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+  background: #FF0000;
+  color: #fff;
+}
+
+.account .btnr-buy {
+  display: inline-block;
+  padding: 8px 40px 10px 40px;
+  border-radius: 50px;
+  color: #FF0000;
+  transition: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+  border: 1px solid #eb6123;
+}
+.account .btnr-buy:hover {
+  background: #FF0000;
+  color: #fff;
+}
+
+.przycisk {
+  display: inline-block;
+  padding: 8px 40px 10px 40px;
+  border-radius: 10px;
+  color: #1C91E2;
+  transition: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  transition: 0.3s;
+  border: 1px solid #1C91E2;
+}
+.przycisk:hover {
+  background: #1C91E2;
+  color: #fff;
+}
+
+
+
+/* Popup box BEGIN */
+.hover_bkgr_fricc{
+    background:rgba(0,0,0,0.7);
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+	left: 0px;
+}
+.hover_bkgr_fricc .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.hover_bkgr_fricc > div {
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+}
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+.trigger_popup_fricc {
+  display: inline-block;
+  padding: 8px 40px 10px 40px;
+  border-radius: 10px;
+  color: #1C91E2;
+  transition: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  transition: 0.3s;
+  border: 1px solid #1C91E2; 
+  cursor: pointer;
+}
+.trigger_popup_fricc:hover {
+  background: #1C91E2;
+  color: #fff;
+}
+
+
+
+/*--------------------------------------------------------------
+# Pay
+--------------------------------------------------------------*/
+
+.account .box2 {
+  background: #293134;
+  text-align: center;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  padding: 8px 40px 10px 40px;
+  width: 400px;
+}
+.account .buy2 {
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
+  border-radius: 2px;
+  color: #fff;
+  transition: none;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "poppins", sans-serif;
+  transition: 0.3s;
+  border: 2px solid #1C91E2;
+  width: 300px;
+  margin: 8px;
+}
+.account .buy2:hover {
+  background: #1C91E2;
+}
+.account .info2 {
+  float:left;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "poppins", sans-serif;
+}
+.account .info22 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "poppins", sans-serif;
+}
+.account .glowny2 {
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  margin: 15px;
+}
+.account .cancel2 {
+  background: rgba(255, 0, 0, 0.7);
+  display: inline-block;
+  padding: 8px 40px 10px 40px;
+  border-radius: 2px;
+  color: #fff;
+  transition: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "poppins", sans-serif;
+  transition: 0.3s;
+  border: 1px solid #ff0f3d;
+  width: 300px;
+  margin: 2px;
+}
+.account .cancel2:hover {
+  background: rgba(255, 0, 0, 0.9);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: opacity 50ms;
+  visibility: hidden;
+  opacity: 0;
+   z-index:10;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  background: #293134;
+  text-align: center;
+  top: 50px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  padding: 8px 40px 10px 40px;
+  width: 400px;
+  margin: 70px auto;
+  transition: all 5s ease-in-out;
+   z-index:10000;
+}
+
+.online {
+  position: fixed;
+  opacity: 10;
+  left: 0px;
+  bottom: 5px;
+  z-index: 99999;
+  width: 400px;
+  height: 30px;
+  border-radius: 4px;
+}
+.online i {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "poppins", sans-serif;
+}
+.hero-footer { 
+opacity: 0;
+visibility: hidden;
+transform:translateY(-20px)
+}
